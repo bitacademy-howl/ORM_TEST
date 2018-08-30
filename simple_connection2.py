@@ -1,14 +1,6 @@
 # ########################################################################################################################
 # # Pymysql 을 사용한 연결설정 및 커넥션 얻어오기 & query
-# import pymysql
-from builtins import Exception
-
 import pymysql
-
-# MySQL Connection 연결
-from pymysql import IntegrityError
-from pymysql.constants.ER import REQUIRES_PRIMARY_KEY
-from pymysql.err import raise_mysql_exception
 
 conn = pymysql.connect(host='localhost', user='root', password='stark1234',
                        db='webdb', charset='utf8')
@@ -17,7 +9,6 @@ conn = pymysql.connect(host='localhost', user='root', password='stark1234',
 curs = conn.cursor()
 
 # SQL문 실행
-
 sqls = []
 
 sql = "INSERT IGNORE INTO customer VALUES ('%s', '%s', '%s')"
