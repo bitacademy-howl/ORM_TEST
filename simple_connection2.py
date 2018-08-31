@@ -40,10 +40,6 @@ conn.close()
 
 #
 
-
-
-
-
 # """
 # pymysql은 python에서 mysql 연동을 위한 라이브러리 입니다.
 # 해당 코드는 pymysql을 이용하여 CRUD하는 간단한 예시입니다.
